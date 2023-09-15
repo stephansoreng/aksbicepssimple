@@ -1,0 +1,23 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "linuxAdminUsername": {
+        "value": "soreng"
+      },
+      "clusterName": {
+        "value": "sskaks"
+      },
+      "dnsPrefix": {
+        "value": "sskaks"
+      },
+      "sshRSAPublicKey": {
+        "reference": {
+          "keyVault": {
+            "id": "/subscriptions/bf1d61a8-41da-477f-92e6-b9eb790ddb72/resourceGroups/myaksRG/providers/Microsoft.KeyVault/vaults/sskkeyvault001"
+          },
+          "secretName": "sshRSAPublicKey"
+        }
+      }
+    }
+  }
