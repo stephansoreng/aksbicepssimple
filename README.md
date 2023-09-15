@@ -1,2 +1,2 @@
-﻿# akswithbiceps
-kick it off
+﻿# Biceps to deploy AKS
+
